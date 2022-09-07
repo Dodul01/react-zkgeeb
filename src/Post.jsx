@@ -1,10 +1,10 @@
 import React from 'react';
+import './style';
 
-const Post = (props) => {
-  
+const Post = () => {
   return(
-    <div>
-      {props.post}
+    <div className="post">
+      
     </div>
   )
 }
