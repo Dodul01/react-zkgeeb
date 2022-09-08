@@ -11,19 +11,18 @@ const Posts = () => {
       const response = await fetch('https://jsonplaceholder.typicode.com/posts');
       const data = await response.json();
 
-      data.map(post =>{
-        setPost(post)
+      data.map(pst =>{
+        setPost(pst)
       });
     } 
     fetchPost();
   },[])
 
-  let key = 0;
 
   return(
     <div>
       {
-        
+        <Post title={post?.title} id={post?.id}/>
       }
     </div>
   )
